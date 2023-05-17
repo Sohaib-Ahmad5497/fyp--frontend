@@ -1,0 +1,9 @@
+.hero-section {
+    /* height: 565px; */
+    width: 100%;
+     background-image: url("../images/hero_banner.png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 0px 7px 16px rgba(0, 0, 0, 0.15), 0px 12px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 40px 40px;
+}

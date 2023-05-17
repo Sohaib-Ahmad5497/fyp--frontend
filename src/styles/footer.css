@@ -1,0 +1,221 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    background-color: #F9DBBB;
+    margin-top: 30px;
+    padding-top: 70px;
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 0px 15px 35px rgba(0, 0, 0, 0.15), 0px 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.blue_section {
+    background-color: #00235B;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 30px 25px;
+    border-radius: 15px;
+}
+
+.blue_section .reg_now_txt {
+    width: 35%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.search_area {
+    display: flex;
+    background-color: white;
+    width: 65%;
+    justify-content: space-between;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.search_area .input {
+    width: 70%;
+}
+
+.search_area .input input {
+    border-radius: 7px;
+    border: 1px solid rgb(112, 112, 112);
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+}
+
+.footer_button {
+    background-color: #00235B;
+    width: 20%;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    /* width: 20%; */
+}
+.footer .center{
+    cursor: pointer;
+}
+
+/* ================================================================================= */
+
+@media screen and (max-width: 768px) {
+    .blue_section {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        /* padding: 30px 15px; */
+        align-items: center;
+    }
+
+    .blue_section .reg_now_txt {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .search_area {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search_area .input {
+        width: 90%;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        border-radius: 0%;
+        height: 45px;
+    }
+
+    .footer_button {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .blue_section .reg_now_txt {
+        font-size: 18px;
+    }
+
+    .search_area .input input {
+        font-size: 14px;
+    }
+
+    .footer_button {
+        font-size: 14px;
+    }
+}
+
+/* =============================================================================== */
+.footer_bar {
+    width: 80%;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pages {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.social_media_icons {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+}
+
+/* ================================================================= */
+@media only screen and (max-width: 768px) {
+    .footer_bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pages {
+        width: 100%;
+        margin-bottom: 20px;
+        /* justify-content: space-between; */
+    }
+
+    .social_media_icons {
+        width: 50%;
+        justify-content: space-between;
+    }
+}
+
+/* ========================================================================= */
+
+.hr {
+    border-top: 1px solid #333;
+    width: 82%;
+    margin-bottom: 30px;
+}
+
+/* ---------------------------------------------------- */
+.footer_terms {
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-weight: bold;
+    color: rgb(83, 80, 80);
+ }
+
+.footer_terms .right {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+     font-weight: bold;
+    color: rgb(83, 80, 80);
+}
+
+.footer_terms .left {
+    width: 30%;
+    
+}
+
+.footer_terms .right .terms,
+.footer_terms .right .policy {
+    font-size: 14px;
+}
+
+/* ==================================================================== */
+@media only screen and (max-width: 768px) {
+    .footer_terms {
+        flex-wrap: wrap;
+    }
+
+    .footer_terms .left,
+    .footer_terms .center,
+    .footer_terms .right {
+        width: 100%;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    .footer_terms .right {
+        margin-top: 10px;
+    }
+
+    .footer_terms .right .terms,
+    .footer_terms .right .policy {
+        font-size: 16px;
+    }
+}
+
+/* ==================================================================== */

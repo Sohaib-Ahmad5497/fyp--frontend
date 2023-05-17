@@ -1,0 +1,146 @@
+.wrapper_one_more_friend {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.one_more_friend {
+    background-image: url("../images//oneMore_banner.png");
+    background-size: cover;
+    background-position: center;
+    width: 82%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    margin: 50px 0;
+}
+
+.one_more_friend .left {
+    width: 50%;
+}
+
+.one_more_friend .left img {
+    max-width: 100%;
+}
+
+.one_more_friend .rght {
+    width: 50%;
+}
+
+.one_more_friend .right .p1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 0.1;
+    color: #00235B;
+}
+
+.one_more_friend .right .p2 {
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 0.1;
+    color: #00235B;
+}
+
+.one_more_friend .right .p3 {
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+
+.one_more_friend .button_section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.one_more_friend .button_section .btn1 {
+    border: 2px solid #00235B;
+    border-radius: 25px;
+    padding: 10px;
+    width: 30%;
+}
+
+.one_more_friend .button_section .btn1 button {
+    border: none;
+    background-color: inherit;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.one_more_friend .button_section .btn2 {
+    background-color: #00235B;
+    border-radius: 25px;
+    padding: 10px;
+    width: 30%;
+}
+
+.one_more_friend .button_section .btn2 button {
+    border: none;
+    background-color: inherit;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* ================================================================================ */
+
+@media screen and (max-width: 768px) {
+    .one_more_friend {
+        flex-direction: column;
+        width: 100%;
+        margin: 20px 0;
+        /* background-image: none; */
+        padding: 0 20px;
+        font-size: 20px;
+    }
+
+    .one_more_friend .left,
+    .one_more_friend .right {
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .one_more_friend .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .one_more_friend .right .p1 {
+        font-size: 30px;
+    }
+
+    .one_more_friend .right .p2 {
+        font-size: 24px;
+        justify-content: center;
+    }
+
+    .one_more_friend .right .p3 {
+        font-size: 12px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .one_more_friend .button_section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .one_more_friend .button_section .btn1,
+    .one_more_friend .button_section .btn2 {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

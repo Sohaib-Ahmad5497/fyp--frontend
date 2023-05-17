@@ -1,0 +1,131 @@
+.regist-wrapper {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  margin: 100px 0;
+
+}
+
+.registration-form {
+  width: 35%;
+  padding: 0 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 3px 3px 5px #00235B;
+  padding-bottom: 20px;
+}
+
+.regist-side {
+  padding: 0 30px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgb(15, 7, 115);
+  background: linear-gradient(90deg, rgba(15, 7, 115, 1) 0%, rgba(255, 222, 185, 1) 100%);
+  box-shadow: -3px 3px 5px #00235B;
+
+}
+
+.regist-side button {
+  border: 2px solid white;
+  background-color: transparent;
+  padding: 11px 25px;
+  border-radius: 25px;
+  margin-right: 30px;
+  color: #00235B;
+  font-weight: bold;
+}
+
+.p-enter {
+  font-size: 20px;
+}
+
+.p-hello {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.registration-form h2 {
+  text-align: center;
+}
+
+.registration-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-form label {
+  margin-bottom: 10px;
+}
+
+.registration-form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  /* width: 50%; */
+}
+
+.regist-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+  }
+
+.registration-form button {
+  outline: none;
+  border: none;
+  background-color: #00235B;
+  padding: 15px 25px;
+  border-radius: 25px;
+  margin-right: 30px;
+  color: white;
+  width:40%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ===================================================================== */
+
+
+@media (max-width: 768px) {
+  .regist-wrapper {
+    flex-direction: column;
+    margin: 50px 0;
+    align-items: center;
+  }
+
+  .registration-form {
+    width: 70%;
+    border-radius: 0%;
+    box-shadow: none;
+  }
+
+  .regist-side {
+    width: 80%;
+    margin-bottom: 40px;
+    border-radius: 0%;
+    padding: 0 20px;
+    box-shadow: none;
+  }
+
+  .regist-side button {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .registration-form input {
+    width: 100%;
+  }
+
+  .registration-form button {
+    width: 100%;
+  }
+
+}

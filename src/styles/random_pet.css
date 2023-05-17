@@ -1,0 +1,163 @@
+.random_pet_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.what_news {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 82%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #00235B;
+}
+
+.what_news .right {
+    border: 2px solid #00235B;
+    border-radius: 25px;
+    padding: 10px;
+    width: 10%;
+
+}
+
+.what_news .right button {
+    border: none;
+    background-color: inherit;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.left .p_whats_new {
+    /* font-size: 20px; */
+    font-size: 1rem;
+}
+
+.left .p_take_a_look {
+    /* font-size: 25px; */
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .what_news {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .what_news .right {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* ================================================================================ */
+
+
+.pet_list {
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card {
+    width: calc(24% - 15px);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 7px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 0px 15px 35px rgba(0, 0, 0, 0.15), 0px 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* ================ */
+.card_image {
+    display: flex;
+    justify-content: center;
+}
+
+.card:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-10px);
+}
+
+.card {
+    position: relative;
+}
+
+.card:hover img {
+    animation: pulse 1s;
+}
+
+@keyframes pulse {
+    10% {
+        transform: scale(1.1);
+    }
+
+
+}
+
+
+.card_image img {
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    max-height: 100%;
+}
+
+.pet_name {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+
+.pet_name .bread,
+.pet_name .slash {
+    margin-right: 5px;
+    /* =========== */
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.pet_disc {
+    display: flex;
+    color: rgb(67, 68, 70);
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pet_disc .age {
+    font-size: 0.9rem;
+    margin-left: 5px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.pet_disc .gendar,
+.pet_disc .dot {
+    margin-right: 5px;
+    font-size: 0.9rem;
+}
+
+.price {
+    display: flex;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 0 calc(49% - 15px);
+    }
+}

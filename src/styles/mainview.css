@@ -1,0 +1,89 @@
+.main-view {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+     color: #00235B;
+    justify-content: space-evenly;
+     padding: 75px 0;
+  }
+
+.main-view .one-more-friend {
+    width: 50%;
+     padding-left: 30px  ;
+
+}
+
+
+.main-view .image {
+    width: 50%;
+}
+
+.main-view .image img {
+    width: 100%;
+}
+
+.main-view .buttons {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+
+.main-view .buttons button {
+    /* color: #00235B; */
+    border: none;
+    outline: none;
+}
+
+.main-view .buttons .view-intro button {
+    background-color: transparent;
+    border: 1px solid #00235B;
+    padding: 15px 25px;
+    border-radius: 25px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.main-view .buttons .explore-now button {
+    background-color: rgb(40, 40, 70);
+    padding: 15px 25px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+  
+  @media only screen and (max-width: 768px) {
+    .main-view {
+       flex-direction: column;
+      padding-top: 20px;
+      }
+     .main-view .one-more-friend {
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 30px;
+      }
+      .main-view .image {
+        width: 100%;
+    }
+    .main-view .buttons {
+        width: 50%;
+        margin-top: 20px;
+      }
+      .main-view .buttons .explore-now button {
+        margin-right: 0;
+      }
+      .main-view .buttons .explore-now button {
+        margin-right: 0;
+      }
+  }
+
+@media only screen and (max-width: 530px) {
+  .main-view .one-more-friend .buttons {
+      flex-direction: column;
+      margin-top: 20px;
+  }
+  .main-view .one-more-friend .view-intro{
+        margin-bottom: 30px;
+  }
+}
